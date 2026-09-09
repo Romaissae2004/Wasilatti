@@ -1,0 +1,24 @@
+info:
+  name: 05 Passer Commande
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:8080/api/orders
+  body:
+    type: json
+    data: |-
+      {
+        "deliveryAddress": "123 Rue de la Liberté, Casablanca",
+        "latitude": 33.5731,
+        "longitude": -7.5898,
+        "contactPhone": "+212600000000"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

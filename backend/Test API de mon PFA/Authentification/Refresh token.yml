@@ -1,0 +1,18 @@
+info:
+  name: Refresh token
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8080/refreshToken
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXAiOiJyZWZyZXNoIiwianRpIjoiNzdkMzg3MzItZTBmNC00YzhkLThkZDctMzllZGI5NTdmOWJhIiwic3ViIjoidXNlcjEiLCJleHAiOjE3ODA0NDkzNzQsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9sb2dpbiJ9.C-g7_RvpJ8qxB4uRLCULCYkxVp6GQvr9GYBmNW_LfOg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

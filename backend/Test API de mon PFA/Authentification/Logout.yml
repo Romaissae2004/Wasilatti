@@ -1,0 +1,24 @@
+info:
+  name: "Logout "
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:8080/logout
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXAiOiJhY2Nlc3MiLCJzdWIiOiJ1c2VyMSIsImV4cCI6MTc3OTg0NDc4MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2xvZ2luIiwicm9sZXMiOlsiVVNFUiJdfQ.b1l4HausquRY8hHlKJUmOxIHrGDJnlvt2c_UM8PqF3g
+  body:
+    type: json
+    data: |-
+      {
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXAiOiJyZWZyZXNoIiwianRpIjoiNDUxZTQyNDktYTg3My00ZTczLWE2MDItY2ViMzViZjY2MjNjIiwic3ViIjoidXNlcjEiLCJleHAiOjE3ODA0NDg2ODIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9sb2dpbiJ9.6ot7es5kKtWQguKNRqpxgQ5FQEKsqXKSHyVfh00IXjM"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

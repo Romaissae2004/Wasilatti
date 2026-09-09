@@ -1,0 +1,22 @@
+info:
+  name: 06 Login Admin
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:8080/login
+  body:
+    type: json
+    data: |-
+      {
+        "username": "admin",
+        "password": "Admin@1234"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

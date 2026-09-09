@@ -1,0 +1,15 @@
+info:
+  name: 13 Livreur Marquer Livrée
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: http://localhost:8080/api/delivery/orders/1/deliver
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

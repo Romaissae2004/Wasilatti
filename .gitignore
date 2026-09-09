@@ -1,0 +1,18 @@
+# Logs
+*.log
+error.log
+logs/
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# Backend
+backend/target/
+backend/.env
+backend/*.env
+
+# IDE
+.idea/
+.vscode/

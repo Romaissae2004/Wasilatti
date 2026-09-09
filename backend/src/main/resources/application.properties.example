@@ -1,0 +1,36 @@
+# ===================================================================
+# CONFIGURATION EXEMPLE - WASILATTI
+# ===================================================================
+
+spring.application.name=Wasilatti
+spring.profiles.active=${SPRING_PROFILE:dev}
+server.port=8080
+
+# Base de données PostgreSQL
+spring.datasource.url=jdbc:postgresql://localhost:5432/wassilati
+spring.datasource.username=postgres
+spring.datasource.password=VOTRE_MOT_DE_PASSE_DB
+
+
+# Clé secrète pour signer les JWT
+jwt.secret=VOTRE_CLE_SIGNATURE_JWT_MIN_512_BITS
+jwt.expire.access=900000
+jwt.expire.refresh=604800000
+
+# Client ID & Secret Google OAuth2
+spring.security.oauth2.client.registration.google.client-id=VOTRE_GOOGLE_CLIENT_ID
+spring.security.oauth2.client.registration.google.client-secret=VOTRE_GOOGLE_CLIENT_SECRET
+spring.security.oauth2.client.registration.google.scope=email,profile
+
+# Service d'email (Gmail SMTP)
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=VOTRE_EMAIL_GMAIL
+spring.mail.password=VOTRE_MOT_DE_PASSE_D_APPLICATION_GMAIL
+
+# Stockage Cloudinary
+cloudinary.cloud-name=VOTRE_CLOUDINARY_CLOUD_NAME
+cloudinary.api-key=VOTRE_CLOUDINARY_API_KEY
+cloudinary.api-secret=VOTRE_CLOUDINARY_API_SECRET
+
+
